@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#edf5ff">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/icons/app-icon-144.png">
+  <link rel="stylesheet" href="/styles.css">
+  <title>婚礼筹备中心</title>
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <img src="/icons/app-icon-144.png" alt="婚礼筹备中心">
+      <div>
+        <p>独立手机应用</p>
+        <h1>婚礼筹备中心</h1>
+      </div>
+    </header>
+
+    <section id="entry" class="card entry-grid">
+      <div>
+        <h2>创建婚礼</h2>
+        <input id="create-name" placeholder="婚礼名称，如 林林 & 阿禾的婚礼">
+        <input id="create-date" type="date">
+        <input id="create-nickname" placeholder="你的昵称">
+        <button id="create-btn">创建并开始</button>
+      </div>
+      <div>
+        <h2>加入婚礼</h2>
+        <input id="join-code" placeholder="邀请码">
+        <input id="join-nickname" placeholder="你的昵称">
+        <button class="secondary" id="join-btn">加入</button>
+      </div>
+    </section>
+
+    <section id="app" hidden>
+      <section class="card summary">
+        <div>
+          <p id="wedding-date"></p>
+          <h2 id="wedding-name"></h2>
+        </div>
+        <strong id="progress"></strong>
+      </section>
+
+      <nav class="tabs">
+        <button data-tab="tasks" class="active">待办</button>
+        <button data-tab="activity">动态</button>
+        <button data-tab="members">成员</button>
+      </nav>
+
+      <section class="card invite" id="invite-card" hidden><small>邀请码</small><strong id="invite-code"></strong><button class="secondary" id="copy-invite-btn">复制邀请码</button></section>
+      <section class="card panel" id="tasks-panel"></section>
+      <section class="card panel" id="activity-panel" hidden></section>
+      <section class="card panel" id="members-panel" hidden></section>
+    </section>
+
+    <p id="message" class="message"></p>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

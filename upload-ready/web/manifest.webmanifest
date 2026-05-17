@@ -1,0 +1,11 @@
+{
+  "name": "婚礼筹备中心",
+  "short_name": "婚礼筹备",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7fbff",
+  "theme_color": "#edf5ff",
+  "icons": [
+    { "src": "/icons/app-icon-144.png", "sizes": "144x144", "type": "image/png" }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "wedding-prep-center",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "test": "node --test",
+    "start": "node server/index.js"
+  }
+}
